@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{660A3758-B45A-4AE6-90E2-2642A5CA940C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.Ioc.Framework</RootNamespace>
+    <AssemblyName>Unity.Ioc.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivationException.cs" />
+    <Compile Include="Attributes\AttributeHelper.cs" />
+    <Compile Include="Attributes\DependencyAttribute.cs" />
+    <Compile Include="Attributes\InjectionConstructorAttribute.cs" />
+    <Compile Include="Attributes\InjectionMethodAttribute.cs" />
+    <Compile Include="Attributes\NamespaceDoc.cs" />
+    <Compile Include="Attributes\SmartAttribute.cs" />
+    <Compile Include="Configuration\Common\AssemblyQualifiedTypeNameConverter.cs" />
+    <Compile Include="Configuration\Common\ConfigurationElementTypeAttribute.cs" />
+    <Compile Include="Configuration\Common\CustomProviderDataHelper.cs" />
+    <Compile Include="Configuration\Common\GenericEnumeratorWrapper.cs" />
+    <Compile Include="Configuration\Common\ICustomProviderData.cs" />
+    <Compile Include="Configuration\Common\IHelperAssistedCustomConfigurationData.cs" />
+    <Compile Include="Configuration\Common\IObjectWithName.cs" />
+    <Compile Include="Configuration\Common\IObjectWithNameAndType.cs" />
+    <Compile Include="Configuration\Common\NamedConfigurationElement.cs" />
+    <Compile Include="Configuration\Common\NamedElementCollection.cs" />
+    <Compile Include="Configuration\Common\NamespaceDoc.cs" />
+    <Compile Include="Configuration\Common\NameTypeConfigurationElement.cs" />
+    <Compile Include="Configuration\Common\NameTypeConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\Common\PolymorphicConfigurationElementCollection.cs" />
+    <Compile Include="Configuration\Common\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\ModuleDefinition.cs" />
+    <Compile Include="Configuration\NamespaceDoc.cs" />
+    <Compile Include="Configuration\PackingSection.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="ContainerImplBase.cs" />
+    <Compile Include="ContainerProvider.cs" />
+    <Compile Include="IContainer.cs" />
+    <Compile Include="IContainerInitializer.cs" />
+    <Compile Include="Lifetime.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceImplementationAttribute.cs" />
+    <Compile Include="ServiceLocator.cs" />
+    <Compile Include="Unity.ContainerAdapter\NamespaceDoc.cs" />
+    <Compile Include="Unity.ContainerAdapter\UnityContainerImpl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Configuration\Common\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
