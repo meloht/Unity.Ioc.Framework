@@ -15,4 +15,13 @@ namespace Unity.Ioc.Framework.Test.Implementation
             Console.WriteLine("input:{0}", a);
         }
     }
+
+    [ServiceImplementation( Name ="class_a",ResolveLifetime =Lifetime.New)]
+    public class TestClass2 : ITestInterface
+    {
+        public void TestMethod(string a)
+        {
+            Console.WriteLine("input:{0}", a);
+        }
+    }
 }

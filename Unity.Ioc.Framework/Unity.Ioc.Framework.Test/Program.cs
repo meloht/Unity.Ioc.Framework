@@ -11,7 +11,7 @@ namespace Unity.Ioc.Framework.Test
     {
         static void Main(string[] args)
         {
-            ITestInterface service = ServiceLocator.GetInstance<ITestInterface>();
+            ITestInterface service = ServiceLocator.GetInstance<ITestInterface>("class_a");
             service.TestMethod("Hello world!");
             Console.ReadKey();
         }
