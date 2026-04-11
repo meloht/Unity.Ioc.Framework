@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Demo/">
+    <Project Path="ClassLibraryTest1/ClassLibraryTest1.csproj" Id="2af9d4d1-0176-4480-9e00-621a01da4aad" />
+    <Project Path="ClassLibraryTest2/ClassLibraryTest2.csproj" Id="dd4c2fe9-39fa-44df-98af-23569afdddd3" />
+  </Folder>
+  <Project Path="Unity.Ioc.Framework.Test/Unity.Ioc.Framework.Test.csproj" />
+  <Project Path="Unity.Ioc.Framework/Unity.Ioc.Framework.csproj" />
+</Solution>
