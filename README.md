@@ -2,7 +2,7 @@
 # Unity.Ioc.Framework
 a unity IoC framework extension for Microsoft.Practices.Unity
 
-![C#](https://img.shields.io/badge/language-C%23-blue.svg) ![.NET Version](https://img.shields.io/badge/dynamic/xml?url=https://raw.githubusercontent.com/meloht/Unity.Ioc.Framework/refs/heads/master/Unity.Ioc.Framework/Unity.Ioc.Framework.csproj&query=//TargetFrameworks&label=.NET) ![NuGet](https://img.shields.io/nuget/v/Unity.Ioc.Framework.svg?logo=nuget&logoColor=white) ![NuGet](https://img.shields.io/nuget/v/Unity.Ioc.Framework.svg?logo=nuget&logoColor=white) ![Downloads](https://img.shields.io/nuget/dt/Unity.Ioc.Framework.svg)
+![C#](https://img.shields.io/badge/language-C%23-blue.svg) ![.NET Version](https://img.shields.io/badge/dynamic/xml?url=https://raw.githubusercontent.com/meloht/Unity.Ioc.Framework/refs/heads/master/Unity.Ioc.Framework/Unity.Ioc.Framework.csproj&query=//TargetFrameworks&label=.NET) ![Release](https://img.shields.io/github/v/release/meloht/Unity.Ioc.Framework.svg?logo=github&label=Release)  [![NuGet](https://img.shields.io/nuget/v/Unity.Ioc.Framework.svg?logo=nuget&logoColor=white)](https://www.nuget.org/packages/Unity.Ioc.Framework/) [![Downloads](https://img.shields.io/nuget/dt/Unity.Ioc.Framework.svg)](https://www.nuget.org/packages/Unity.Ioc.Framework/)
 
 # QuickStart
 ## Interface & implementation
