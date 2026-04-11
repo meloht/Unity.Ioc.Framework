@@ -2,6 +2,8 @@
 # Unity.Ioc.Framework
 a unity IoC framework extension for Microsoft.Practices.Unity
 
+**[Unity.Ioc.Framework.Code](https://github.com/meloht/Unity.Ioc.Framework.Core)** Support .NET Core/ netstandard 2.0
+
 ![C#](https://img.shields.io/badge/language-C%23-blue.svg) ![.NET Version](https://img.shields.io/badge/.NET-4.8-blue?style=plastic) ![NuGet](https://img.shields.io/nuget/v/Unity.Ioc.Framework.svg?logo=nuget&logoColor=white) ![Downloads](https://img.shields.io/nuget/dt/Unity.Ioc.Framework.svg)
 
 # QuickStart
