@@ -62,6 +62,9 @@ namespace Unity.Ioc.Framework.Testx
             Thread.Sleep(50);
             Assert.False(object.ReferenceEquals(service1, service2));
             Assert.NotEqual(id1, id2);
+
+            var service3 = ServiceLocator.GetInstance<InterfaceThread>();
+            Assert.True(object.ReferenceEquals(service1, service3));
         }
 
         [Fact]
